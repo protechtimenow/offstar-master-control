@@ -1,0 +1,56 @@
+{
+  "name": "offstar-master-control",
+  "version": "1.0.0",
+  "description": "🎯 OFFSTAR Master Control Hub - Enterprise GitHub ecosystem manager with mini-apps, agent frameworks, deployment orchestration, and background process control",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "deploy": "vercel --prod",
+    "preview": "vercel",
+    "organize-repos": "node scripts/organize-repositories.js",
+    "deploy-all-agents": "node scripts/deploy-agents.js",
+    "mass-deploy": "node scripts/mass-deploy.js",
+    "kill-processes": "node scripts/process-manager.js kill-all",
+    "health-check": "node scripts/health-monitor.js",
+    "setup-enterprise": "node scripts/enterprise-setup.js"
+  },
+  "keywords": [
+    "github",
+    "enterprise",
+    "management",
+    "deployment",
+    "ai-agents",
+    "automation",
+    "orchestration",
+    "mini-apps",
+    "blockchain",
+    "vercel",
+    "offstar",
+    "ob1",
+    "control-hub"
+  ],
+  "author": "protechtimenow",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "@octokit/rest": "^20.0.2",
+    "ws": "^8.14.2",
+    "node-cron": "^3.0.3",
+    "commander": "^11.1.0",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/protechtimenow/offstar-master-control.git"
+  }
+}
